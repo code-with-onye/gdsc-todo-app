@@ -2,7 +2,15 @@
 <html>
   <!-- Head begin -->
   <head>
-    <title></title>
+    <title>
+      App:: Todo List 😀
+    </title>
+
+    <!-- FONT FROM GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
     <script type="javascript"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -10,14 +18,34 @@
   <!-- Head End -->
 
   <body>
-    <header></header>
-
+    <main class="main">
+    
     <!-- Body  -->
     <section class="gdsc__main layout">
-      <div class="gdsc__card">cool</div>
+      <h1>Gdsc pti: Todo list</h1>
+      <div class="gdsc__card"><p>Clean Room</p></div>
+      <div class="gdsc__card"><p>Read Book</p></div>
+      <div class="gdsc__card"><p>Cook Spaghett</p></div>
     </section>
-    <!-- Body  -->
-    <section></section>
-    <!-- Menu Bar -->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__items">
+          <img src="./img/user-o.svg" alt="user--outline" class="icon">
+        </li>
+        <li class="nav__items">
+          <img src="./img/add-outline.svg" alt="icon--add" class="icon icon--add">
+        </li>
+        <li class="nav__items">
+          <img src="./img/moon-o.svg" alt="icon--moon" class="icon">
+        </li>
+      </ul>
+      <div class="input--field hidden">
+        <input type="text" class="input" placeholder="Write a new task">
+        <img src="./img/x.svg" alt="icon--add" class="icon icon--❌">
+        <img src="./img/checkmark.svg" alt="icon--add" class="icon icon--✔">
+      </div>
+    </nav>
+    </main>
   </body>
 </html>
