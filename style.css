@@ -3,18 +3,73 @@
   padding: 0;
 }
 
-.layout {
-  margin: 0 2rem 0 2rem;
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  /* padding: 0 2rem 0 2rem; */
 }
-/* 
+
+.card__layout {
+  /* padding: 0 2rem 0 2rem; */
+  display: flex;
+  width: 100%;
+  display: center;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.gdsc__card_wrapper {
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2em;
+  border-radius: 0.5rem;
+}
 .gdsc__main {
-  background-color: black;
-} */
+  background-color: rgba(244, 244, 248, 0.753);
+  width: 100%;
+  height: 100vh;
+
+  padding: 0.1em 1.2em;
+}
 
 .gdsc__card {
-  background-color: rgb(241, 234, 234);
+  background-color: white;
   color: rgb(33, 31, 31);
   padding: 1.2rem;
-  margin: 2rem;
   cursor: pointer;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(182, 181, 181);
+}
+gi .card__body {
+  width: 100%;
+}
+
+.gdsc__delete {
+  display: none;
+  gap: 1.2em;
+}
+
+.gdsc__icon {
+  width: 2rem;
+  height: 2em;
+  background-color: rgb(236, 117, 117);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  /* styles for mobile devices */
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 60%;
+  }
 }
