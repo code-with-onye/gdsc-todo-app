@@ -2,50 +2,54 @@
 <html>
   <!-- Head begin -->
   <head>
-    <title>
-      App:: Todo List 😀
-    </title>
-
-    <!-- FONT FROM GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-
+    <title></title>
     <script type="javascript"></script>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/2b2aa84e80.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <!-- Head End -->
 
   <body>
-    <main class="main">
-    
-    <!-- Body  -->
-    <section class="gdsc__main layout">
-      <h1>Gdsc pti: Todo list</h1>
-      <div class="gdsc__card"><p>Clean Room</p></div>
-      <div class="gdsc__card"><p>Read Book</p></div>
-      <div class="gdsc__card"><p>Cook Spaghett</p></div>
-    </section>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__items">
-          <img src="./img/user-o.svg" alt="user--outline" class="icon">
-        </li>
-        <li class="nav__items">
-          <img src="./img/add-outline.svg" alt="icon--add" class="icon icon--add">
-        </li>
-        <li class="nav__items">
-          <img src="./img/moon-o.svg" alt="icon--moon" class="icon">
-        </li>
-      </ul>
-      <div class="input--field hidden">
-        <input type="text" class="input" placeholder="Write a new task">
-        <img src="./img/x.svg" alt="icon--add" class="icon icon--❌">
-        <img src="./img/checkmark.svg" alt="icon--add" class="icon icon--✔">
+    <main class="gdsc__main">
+      <!-- Body  -->
+      <div class="container gdsc__card_wrapper">
+        <div class="card__header">
+          <h3>Todo</h3>
+        </div>
+        <div class="card__body">
+          <section class="card__layout">
+            <div class="gdsc__card">
+              <p>cool</p>
+              <div class="gdsc__delete">
+                <div class="gdsc__icon">
+                  <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="gdsc__icon">
+                  <i class="fa-sharp fa-solid fa-trash"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </nav>
+
+      <!-- Body  -->
+
+      <section class="gdsc__card__footer">
+        <div class="footer__wrapper container">
+          <div><i class="fa-regular fa-user"></i></div>
+          <div class="plus__icon" style="margin-bottom: 2em">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div><i class="fa-solid fa-moon"></i></div>
+          <!-- <div><i class="fa-regular fa-sun"></i></div> -->
+        </div>
+      </section>
+      <!-- Menu Bar -->
     </main>
   </body>
 </html>
